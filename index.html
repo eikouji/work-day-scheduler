@@ -31,67 +31,31 @@
     <p id="currentDay" class="lead"></p>
   </header>
     <!-- Timeblocks go here -->
-     <!-- 9AM -->
- <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-6 col-md-6 mb-3">
-        9:00AM
-       </div>
-      <div class="col-8">
-        Task Content
-      </div>
-     <div class="col">
-      Icon Thing
-      </div>
-    </div>
-     
-     <!-- 10AM -->
-          <div class="col-12 col-md-6 col-xl-3 mb-3">
-        <div class="card">
-          <h4 class="card-header bg-dark text-light d-flex align-items-center">
-            10AM
-          </h4>
-          <ul id="list-inReview" class="list-group list-group-flush">
-          </ul>
-        </div>
-      </div>
-     
-     <!-- 11AM -->
-          <div class="card">
-       <div class="col-sm-8">11:00AM</div>
-          </div>
-     
-     <!-- 12pm -->
-     <div class="card">
-       <div class="col-sm-4">12:00PM</div>
-          </div>
-     
-     <!-- 1pm -->
-     <div class="card">
-       <div class="col-sm-8">1:00PM</div>
-          </div>
-     
-     <!-- 2pm -->
-     <div class="card">
-       <div class="col-sm-8">2:00PM</div>
-          </div>
-     
-     <!-- 3pm -->
-     <div class="card">
-       <div class="col-sm-8">3:00PM</div>
-          </div>
-     
-     <!-- 4pm -->
-     <div class="card">
-       <div class="col-sm-8">4:00PM</div>
-          </div>
-     
-     <!-- 5pm -->
-       <div class="card">
-       <div class="col-sm-8">5:00PM</div>
-          </div>
-     </div>
-    </div>
+    <header class="jumbotron">
+        <h1 class="display-3">Work Day Scheduler</h1>
+        <p class="lead">A simple calendar app for scheduling your work day</p>
+        <p id="currentDay" class="lead"></p>
+      </header>
+        <!-- Timeblocks go here -->
+         <!-- 9AM -->
+     <div class="container-fluid">
+       <div class="scheduler">
+         <h3 class="current-date"></h3>
+         <div class="time-block">
+           <table class="table table-bordered">
+             <div class="row">
+             <thead class="thead-dark">
+               <tr>Time</tr>
+               <tr>Task to Do</tr>
+               <tr>Icon</tr>
+             </thead>
+             <tbody>
+               <tr>
+             </tbody>
+             
+               
+             
+               <btn class="saveBtn">Save</btn>
 
     <!-- jQuery cdn link -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
