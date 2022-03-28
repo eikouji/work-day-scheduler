@@ -31,7 +31,9 @@ function timeBlockColors() {
 function currentDateEl() {
 
     // get current day in readable format, have it display where currentDay class is in HTML //
-    $("#currentDay").moment().format("MMM Do YY");
+    //moment().format('MMMM Do YYYY, h:mm:ss a'); Month, Date, Year, Time 
+
+    $("#currentDay").moment().format("MMM Do YY"); // MM, DD, YY 
     // a console log to see if anything displays on firing this function //
     console.log(currentDateEl);
 }
@@ -46,6 +48,27 @@ function scheduleInit() {
     // color time blocks appear //
     timeBlockColors();
 }
+
+// local storage function //
+function localStorage() {
+   // get any appointments saved to the calendar //
+   var calendarAppointments = JSON.parse(localStorage.getItem("events"));
+
+   // no calendar appointments //
+   if (!calendarAppointments) {
+       localStorage.setItem("")
+   }
+}
+
+
+// save button click handlers //
+function saveButtonClickHandler() {
+    $("#saveItem0).on("click", () => {
+        saveText(0);
+    });
+}
+
+
 
 // actually start the application //
 scheduleInit();
