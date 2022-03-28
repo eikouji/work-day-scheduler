@@ -63,7 +63,7 @@ function localStorage() {
 
 // save button click handlers //
 function saveButtonClickHandler() {
-    $(".saveBtn).on("click"), () => {}
+    $(".saveBtn).on("click", "time-block", function()=>{
       // save buttons by id per indicated hour //
       $("#saveItem9AM"),
 
@@ -74,7 +74,7 @@ function saveButtonClickHandler() {
       // 12 pm save button //
       $("#saveItem12PM"),
       // save appointment to this hour block on click //
-      add().text("").to(".time-block")
+      add().text("").to(".time-block")[
 
       $("#saveItem1PM"),
 
@@ -83,15 +83,27 @@ function saveButtonClickHandler() {
       $("#saveItem3PM"),
 
       $("#saveItem4PM"),
-      
+
       $("#saveItem5PM"),
       
       // save appointment info on click //
       add().text("").to(".text-area"
 
       )
-    });
-}
+});
+      $(this)
+        .children()
+        .each(function() {
+            tempArr.push({
+                text: $(saveBtn)
+                .find("time-hour")
+                .text("")
+                .trim(),
+            })
+                text: $()
+        })
+      ]
+
 
 
 
