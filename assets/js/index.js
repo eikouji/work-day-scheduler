@@ -63,8 +63,33 @@ function localStorage() {
 
 // save button click handlers //
 function saveButtonClickHandler() {
-    $("#saveItem0).on("click", () => {
-        saveText(0);
+    $(".saveBtn).on("click"), () => {}
+      // save buttons by id per indicated hour //
+      $("#saveItem9AM"),
+
+      $("#saveItem10AM"),
+
+      $("#saveItem11AM"),
+
+      // 12 pm save button //
+      $("#saveItem12PM"),
+      // save appointment to this hour block on click //
+      add().text("").to(".time-block")
+
+      $("#saveItem1PM"),
+
+      $("#saveItem2PM"),
+
+      $("#saveItem3PM"),
+
+      $("#saveItem4PM"),
+      
+      $("#saveItem5PM"),
+      
+      // save appointment info on click //
+      add().text("").to(".text-area"
+
+      )
     });
 }
 
